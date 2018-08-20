@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<a href="#" class="sidebar" id="sidebar"><img src="assets/images/sidebar.png" /></a>
+	<div class="header-right">
+		<div class="notifications">
+			<a href="#">
+				<img src="assets/images/create-campaign/notifications.png">
+				<span class="notification_count">2</span>
+			</a>
+		</div>
+		<div class="account">
+			<span><img src="assets/images/create-campaign/user.png"></span>
+			<button onclick="dropAccount()" class="dropbtn"></button>
+			  <div id="acDropdown" class="account-content">
+			    <a href="#">The Hindu</a>
+			    <a href="#about">Logout</a>
+			  </div>
+		</div>
+	</div>
+</div>
+<div class="main agency-portal campaigns">
+	<div class="col-left-bar">
+		<a href="#" class="active">
+			<img src="assets/images/create-campaign/home.png" />
+			<img src="assets/images/create-campaign/active/home.png" />
+			<span>Home</span>
+		</a>
+		<a href="#">
+			<img src="assets/images/create-campaign/brands.png" />
+			<img src="assets/images/create-campaign/active/brands.png" />
+			<span>Brands</span>
+		</a>
+		<a href="#">
+			<img src="assets/images/create-campaign/campaign.png" />
+			<img src="assets/images/create-campaign/active/campaign.png" />
+			<span>Campaign</span>
+		</a>
+		<!-- <a href="#">
+			<img src="assets/images/create-campaign/activity.png">
+			<img src="assets/images/create-campaign/active/activity.png">
+			<span>Activity</span>
+		</a> -->
+		<a href="#">
+			<img src="assets/images/create-campaign/analytics.png" />
+			<img src="assets/images/create-campaign/active/analytics.png" />
+			<span>Analytics</span>
+		</a>
+	</div>
+	<div class="campaigns-main">
+		<div class="campaigns-main-top">
+			<div class="page-title">
+				<h2>Create Campaign</h2>
+			</div>
+			<div class="campaigns-top-right">
+				<input type="search" name="search" placeholder="Search by brand">
+				<span class="sort">
+					Sort
+					<button onclick="dropSort()" class="ac-dropbtn"></button>
+					  <div id="sortDropdown" class="sort-content">
+					    <a href="#">Ascending</a>
+					    <a href="#">Descending</a>
+					  </div>
+				</span>
+			</div>
+		</div>		
+		<div class="campaigns-main-list">
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="create-campaign-block">
+						<a href="#">
+							<img src="assets/images/campaigns/create-campaign-icon.png" />
+							<span>Create Campaign</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/2.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/2.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/2.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/2.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/3.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/3.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/2.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/2.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/2.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/2.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/3.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/3.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="camp-list-block">
+				<div class="camp-list-block-in">
+					<div class="campaigns-brand">
+						<div class="campaigns-brand-icon">
+							<img src="assets/images/campaigns/2.jpg" />
+						</div>
+						<div class="campaigns-name">
+							<span>Brand Name</span>
+							<span>Campaign Name</span>
+						</div>
+					</div>
+					<div class="campaign-img"><img src="assets/images/campaigns/2.jpg" /></div>
+					<div class="campaign-btm">
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/edit.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/analytics.png" /></a></span>
+						</div>
+						<div>
+							<span><a href="#"><img src="assets/images/campaigns/delete.png" /></a></span>
+							<span><a href="#"><img src="assets/images/campaigns/info.png" /></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
